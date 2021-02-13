@@ -1,12 +1,15 @@
 #!/usr/bin/env python3
 #Coded by CyberCommads
+import os
 import sys
 import requests
 from time import sleep
 
 def main():
-    #print("\033[91m[!] WARNING\033[0m Target Address e.g. http://example.com")
-    url = sys.argv[1] or input("Target Url: ")
+    os.system('cls' if os.name == 'nt' else 'clear')
+    #print("\033[34m[*] \033[0mTarget Url e.g. http://example.com")
+    #url = input("Enter Target Url: ")
+    url = sys.argv[1]
 
     start = "Start Scanning...\n"
     for s in start:
